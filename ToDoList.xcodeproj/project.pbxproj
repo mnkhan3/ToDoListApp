@@ -15,6 +15,9 @@
 		374D35C11C16A56100F8BBBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374D35BF1C16A56100F8BBBB /* LaunchScreen.storyboard */; };
 		374D35CC1C16A56100F8BBBB /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D35CB1C16A56100F8BBBB /* ToDoListTests.swift */; };
 		374D35D71C16A56100F8BBBB /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D35D61C16A56100F8BBBB /* ToDoListUITests.swift */; };
+		374D35E71C16A6D400F8BBBB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D35E51C16A6D400F8BBBB /* Task.swift */; };
+		374D35E91C16B48A00F8BBBB /* TaskTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D35E81C16B48A00F8BBBB /* TaskTVC.swift */; };
+		374D35ED1C17C92000F8BBBB /* logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 374D35EC1C17C92000F8BBBB /* logo.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		374D35D21C16A56100F8BBBB /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		374D35D61C16A56100F8BBBB /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		374D35D81C16A56100F8BBBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		374D35E51C16A6D400F8BBBB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = ToDoList/Task.swift; sourceTree = "<group>"; };
+		374D35E81C16B48A00F8BBBB /* TaskTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTVC.swift; sourceTree = "<group>"; };
+		374D35EC1C17C92000F8BBBB /* logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpeg; path = ../../../../logo.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		374D35A71C16A56100F8BBBB = {
 			isa = PBXGroup;
 			children = (
+				374D35E81C16B48A00F8BBBB /* TaskTVC.swift */,
+				374D35E51C16A6D400F8BBBB /* Task.swift */,
 				374D35B21C16A56100F8BBBB /* ToDoList */,
 				374D35CA1C16A56100F8BBBB /* ToDoListTests */,
 				374D35D51C16A56100F8BBBB /* ToDoListUITests */,
@@ -99,6 +107,7 @@
 		374D35B21C16A56100F8BBBB /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				374D35EC1C17C92000F8BBBB /* logo.jpeg */,
 				374D35B31C16A56100F8BBBB /* AppDelegate.swift */,
 				374D35B51C16A56100F8BBBB /* ViewController.swift */,
 				374D35B71C16A56100F8BBBB /* Main.storyboard */,
@@ -196,6 +205,7 @@
 				TargetAttributes = {
 					374D35AF1C16A56100F8BBBB = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = H88DFDK492;
 					};
 					374D35C61C16A56100F8BBBB = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -234,6 +244,7 @@
 			files = (
 				374D35C11C16A56100F8BBBB /* LaunchScreen.storyboard in Resources */,
 				374D35BE1C16A56100F8BBBB /* Assets.xcassets in Resources */,
+				374D35ED1C17C92000F8BBBB /* logo.jpeg in Resources */,
 				374D35B91C16A56100F8BBBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374D35E91C16B48A00F8BBBB /* TaskTVC.swift in Sources */,
 				374D35B61C16A56100F8BBBB /* ViewController.swift in Sources */,
 				374D35BC1C16A56100F8BBBB /* ToDoList.xcdatamodeld in Sources */,
+				374D35E71C16A6D400F8BBBB /* Task.swift in Sources */,
 				374D35B41C16A56100F8BBBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +414,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MohammedKhan.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +429,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MohammedKhan.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -486,6 +507,7 @@
 				374D35DD1C16A56100F8BBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		374D35DE1C16A56100F8BBBB /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +516,7 @@
 				374D35E01C16A56100F8BBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		374D35E11C16A56100F8BBBB /* Build configuration list for PBXNativeTarget "ToDoListUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +525,7 @@
 				374D35E31C16A56100F8BBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

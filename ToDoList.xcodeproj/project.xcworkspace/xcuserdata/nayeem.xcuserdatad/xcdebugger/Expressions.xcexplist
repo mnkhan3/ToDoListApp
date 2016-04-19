@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.saveData(AnyObject) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "txtName.text">
+            </PersistentString>
+            <PersistentString
+               value = "txtName">
+            </PersistentString>
+            <PersistentString
+               value = "txtDesc">
+            </PersistentString>
+            <PersistentString
+               value = "txtDesc.text">
+            </PersistentString>
+            <PersistentString
+               value = "imgData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "t.tName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskTVC.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:TaskTVC.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
